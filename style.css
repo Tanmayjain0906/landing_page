@@ -79,7 +79,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 83vh;
 }
 
 .main-container {
@@ -89,8 +89,6 @@ section {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
-    flex-wrap: wrap;
 }
 
 .left {
@@ -137,7 +135,7 @@ section {
 .right {
     width: 800px;
     height: 600px;
-
+    width: 50%;
 }
 
 .right img {
@@ -161,6 +159,7 @@ section {
     position: fixed;
     left: 0;
     right: 0;
+    bottom: 2rem;
 }
 
 .footer-items
@@ -169,4 +168,99 @@ section {
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+}
+
+.hambar
+{
+    display: none;
+}
+
+@media (max-width: 1650px) {
+    .my-nav
+    {
+        width: 90%;
+    }
+
+    .main-container
+    {
+        width: 90%;
+    }
+
+    .footer-container
+    {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width: 1270px) {
+    .main-container
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }   
+    .left
+    {
+        width: 90%;
+    }
+
+    .right
+    {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+     
+    .left h1
+    {
+        font-size: 6rem;
+    }
+
+    .left h2
+    {
+        font-size: 3rem;
+    }
+
+    .left button
+    {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+
+    .links
+    {
+        display: none;
+    }
+
+    .hambar
+    {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+     
+    .left h1
+    {
+        font-size: 4rem;
+    }
+
+    .left h2
+    {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+     
+    .right img { 
+        border-radius: 2rem;
+    }
 }
